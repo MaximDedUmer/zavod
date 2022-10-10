@@ -1,0 +1,278 @@
+*
+	{
+		font-family: arial;
+	}
+html
+	{
+		margin: 0;
+		padding: 0;
+	}
+body
+	{
+		margin: 0;	
+	}
+a
+	{
+		text-decoration: none;
+	}
+
+.all
+	{
+	min-height: 100vh;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	}
+.top
+	{
+		background-color: #fff;
+		flex: 0 0 65px;
+		padding: 0px 10px 0 10px;
+		display:flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: row;
+		border-bottom: 2px solid gray;
+	}
+.logo
+	{
+		height:100px; 
+	}
+.content
+	{
+	flex:1 1 auto;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	}
+footer
+	{
+		background-color: #996633;
+		color: white;
+		padding: 7px;
+		font-family: arial;
+		display: block;
+		min-height: 40px;
+	}
+.footer_row
+		{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+.fut
+		{
+			flex: 1 0 50%;	
+			line-height: 1.5;	
+		}
+.nameF
+		{
+		font-size: 22px;
+		}
+.nom
+		{
+			color: white;
+			transition: 0.1s;
+		}
+.nom:hover
+		{
+			color: black;
+			transition: 0.1s;
+		}
+
+.container
+	{
+		max-width: 55vw;
+		justify-content: center;
+		align-self: flex-start;
+		min-width: 55vw;
+	}
+.name
+	{
+		text-align: center;
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 16px;
+	}
+#name
+	{
+		font-size:30pt; 
+		font-family: 'Didact Gothic', sans-serif;
+	}
+/*.nakoplenie_row
+	{
+		display:flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-items: center;
+		
+	}*/
+/*.nakoplenie_1 
+	{
+		background-color: #ffffff;
+		flex: 1 1 300px;
+		align-self:stretch;
+		justify-content:center;
+		margin: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border: 4px solid black;
+		border-image: linear-gradient(90deg, #F51500, #1E00EB);
+		border-image-slice: 1;
+		padding-top: 5px;
+	}*/
+
+/*.nakoplenie1_png
+	{
+		display: flex;
+		flex:1 1 auto;
+		justify-content: center;
+	}	
+.nakoplenie1_png img
+	{
+		max-width: 100%;
+	}	
+.nakoplenie_img
+	{
+		flex: 0 0 240px;
+		
+	}
+.nakoplenie_img img
+	{
+		max-width: 100%;
+		
+	}
+*/
+.block_name
+	{
+		font-size: 26px;
+		text-align: center;
+		color: #3b1d00;
+		
+	}
+.menu_punkt
+	{
+		font-size: 20px;
+		transition: 0.1s;
+		color: #663300;
+		margin: 1px 0px;
+		border: 1px solid #663300;
+		width: 18vw;
+		border-radius: 3px;
+	}
+.menu_punkt:hover
+	{
+		color: black;
+		transition: 0.1s;
+	}
+
+.left
+	{
+		display: flex;
+		flex-direction: column;
+		margin:0px 10px;
+		align-self: flex-start;
+		width: 19vw;
+	}
+.menu 
+	{
+		background:#FFCC99;
+		border-radius: 3px;
+		width: 100%;
+		min-height: 175px;
+		margin:10px 0px; 
+		align-items: center;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+	}
+.pogoda
+	{
+		background:#FFCC99;
+		width: 100%;
+		min-height: 200px;
+		margin:10px 0px;
+	}
+
+.osnova
+	{
+		background:#fff;
+		width: 100%;
+		height: 800px; 
+		align-self: flex-start;
+		margin:10px 0px;
+	}
+
+.right
+	{
+		display: flex;
+		flex-direction: column;
+		margin: 0px 10px;
+		width: 19vw;
+		align-self: flex-start;
+	}
+.vhod
+	{
+		background:#FFCC99;
+		width: 100%;
+		min-height: 200px; 
+		margin:10px 0px;
+	}
+.novosti
+	{
+		background:#FFCC99;
+		width: 100%;
+		min-height: 400px; 
+		margin:10px 0px;
+	}
+.reklama
+	{
+		background:#FFCC99;
+		width: 100%;
+		min-height: 200px; 
+		margin:10px 0px;
+	}
+#pic1
+	{
+		width: 100%
+	}
+
+@media screen and (max-width: 800px)
+	{
+		.content
+			{
+				flex-wrap: wrap;
+				flex-direction: column;
+				min-width: 80vw;
+				
+				
+			}
+		.left
+			{
+				align-self: center;
+				margin: 0px 0px;
+				width: 100%;
+				align-items: center;
+			}
+		.right
+			{
+				align-self: center;
+				margin: 0px 0px;
+				width: 100%;
+				align-items: center;
+			}
+		.container
+			{
+				width: 100%;
+				align-self: center;
+				max-width: 100%;
+			}
+		.menu_punkt
+			{
+				min-width: 90%;
+			}
+	}
