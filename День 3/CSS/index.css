@@ -30,11 +30,6 @@ a
 		background-color: #fff;
 		flex: 0 0 65px;
 		padding: 0px 10px 0 10px;
-		display:flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: row;
 		border-bottom: 2px solid gray;
 	}
 .logo
@@ -44,10 +39,10 @@ a
 .content
 	{
 	flex:1 1 auto;
-	margin: 0 auto;
+	margin: 0px 3px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	}
 footer
@@ -87,57 +82,11 @@ footer
 
 .container
 	{
-		max-width: 55vw;
+		width: 60vw;
 		justify-content: center;
 		align-self: flex-start;
-		min-width: 55vw;
 	}
 
-/*.nakoplenie_row
-	{
-		display:flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		align-items: center;
-		
-	}*/
-/*.nakoplenie_1 
-	{
-		background-color: #ffffff;
-		flex: 1 1 300px;
-		align-self:stretch;
-		justify-content:center;
-		margin: 10px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		border: 4px solid black;
-		border-image: linear-gradient(90deg, #F51500, #1E00EB);
-		border-image-slice: 1;
-		padding-top: 5px;
-	}*/
-
-/*.nakoplenie1_png
-	{
-		display: flex;
-		flex:1 1 auto;
-		justify-content: center;
-	}	
-.nakoplenie1_png img
-	{
-		max-width: 100%;
-	}	
-.nakoplenie_img
-	{
-		flex: 0 0 240px;
-		
-	}
-.nakoplenie_img img
-	{
-		max-width: 100%;
-		
-	}
-*/
 .block_name
 	{
 		font-size: 26px;
@@ -205,6 +154,7 @@ footer
 		display: flex;	
 		flex-direction: column;
 		align-items: center;
+
 	}
 .name
 	{
@@ -256,8 +206,29 @@ footer
 		border:solid 2px #663300;
 		box-shadow: 2px 2px 4px gray;
 		border-radius: 3px;
-		padding: 2px
+		padding: 2px 5px;
+		color: #663300;
+
 	}
+.vidi_deyat
+	{
+		display: flex;
+		border-top:solid 2px #663300;
+		border-left:solid 2px #663300;
+		border-right:solid 2px #663300;
+		width: 99%;
+	}
+.vidi_deyat2
+	{
+		display: flex;
+		border:solid 2px #663300;
+		width: 99%;
+	}
+.vidi_deyat_img
+	{
+	 width: 50%;
+	}
+
 
 
 
@@ -334,14 +305,31 @@ footer
 		overflow-y: scroll;
 		height: 500px
 	}
+.novosti::-webkit-scrollbar  {
+    width: 10px;
+    background-color: #FFCC99;
+}
+.novosti::-webkit-scrollbar-thumb
+	{
+		background-color: #663300;
+	}
+::-webkit-scrollbar 
+{
+  width: 10px;
+    background-color: #FFCC99;
+}
+::-webkit-scrollbar-thumb
+	{
+		background-color: #663300;
+	}
+
 .new
 	{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		margin: 10px;
-		text-align: left;
-		word-wrap: break-word;
+		text-align: left;	
 		text-indent: 20px;
 		font-size: 14pt;
 		border:solid 2px #663300;
@@ -351,17 +339,23 @@ footer
 	{
 		background:#FFCC99;
 		width: 100%;
-		min-height: 200px; 
+		min-height: 100px; 
 		margin:10px 0px;
 		box-shadow: 2px 2px 4px gray;
 	}
-#pic1
+
+.pic
 	{
 		width: 100%
 	}
-#pic2
+.pic2
 	{
 		width: 100%
+	}
+.pic3
+	{
+		width: 100%;
+		margin: 5px 0px;
 	}
 .width10
 	{
@@ -384,6 +378,7 @@ footer
 				margin: 0px 0px;
 				width: 100%;
 				align-items: center;
+				margin-top: 500px
 			}
 		.right
 			{
@@ -401,6 +396,7 @@ footer
 		.menu_punkt
 			{
 				min-width: 90%;
+				max-height: 20px;
 			}
 		.form
 			{
@@ -418,5 +414,48 @@ footer
 			{
 				min-width: 90%;
 			}
+		.menu
+			{
+				position: fixed;
+				z-index: 10;
+				top: 75px;
+				height: 10px;
+			}
+		.top
+			{
+				position: fixed;
+				z-index: 20;
+				top: 0px;
+				left:0px;
+				right: 0px; 
+			}
+		.vhod
+			{
+				position: absolute;
+				top: 260px;
+			}
+		
+	}
+/*/\/\/\/\/\/\/\/\CONTACTS/\/\/\/\/\/\/\/\/\*/
+ .imya
+	{
+		font-family: 'Didact Gothic', sans-serif;
+		font-size: 16pt;
+		color: #3b1d00;
+		margin: 20px 0px; 
+		text-align: left;
+	}
+.osnova_contact
+	{
+		background:#ffe8d1;
+		width: 99%;
+		height: auto; 
+		align-self: flex-start;
+		margin:10px 0px;
+		padding: 3px;
+		box-shadow: 2px 2px 4px gray;
+		display: flex;	
+		flex-direction: column;
+		align-items: flex-start;
 
 	}
